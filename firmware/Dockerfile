@@ -9,6 +9,16 @@ RUN apt-get update && \
     wget autoconf libtool git make g++ valgrind \
     cmake can-utils
 
+RUN git clone --recurse-submodules https://github.com/xR3b0rn/dbcppp.git && \
+    cd dbcppp \
+    mkdir build \
+    cd build \
+    cmake -DCMAKE_BUILD_TYPE=Release .. \
+    make -j \
+    make RunTests \
+    make install \
+    ldconfig
+
 COPY . .
 
 RUN find . -name "CMakeCache.txt" -delete
