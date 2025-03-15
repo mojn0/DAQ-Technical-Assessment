@@ -21,7 +21,9 @@ Before doing extracting the dump file, i decided to parse the three DBC files fi
 
 I also experimented with the other formats of the parsing but found them to be of no use, at least currently.
 
+I have decided to use a python notebook file to extract and parse the dump.log file. Currently, I am still trying to figure out how to parse and decode the can frames in dump.log.
 
+For now, i will move on to the next stage for the sake of time
 
 ## Spyder
 
