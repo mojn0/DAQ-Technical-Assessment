@@ -1,8 +1,46 @@
 Use this file to write your answer to Stage 2 of the firmware tasks.
 
 CAN
-Q1:
+Q1: Advantages:
+- Reliable -> The CAN protocol is a highly reliable protocol because it has robust error detection
+	and is designed to isolate faults.
+- Message priority -> Through arbitration and Prioritisation, high-priority messages are sent first
+	to ensure there are no collisions within the network.
+- Low Cost -> Since the CAN protocol requires only 2 cables at the least, it is a very cheap protocol
+	to implement which can allow for networks to be larger if needed with little extra cost.
+	Additionally, this simplicity allows the CAN protocol to be lighter than other protocols which
+	is a very important factor for some use cases.
 
-Q2:
+Disadvantages:
+- Low Data Rate -> The CAN protocol has a lower max data rate at 20Mbps for the Data phase of the
+	Can XL protocol, however, the arbitration phase data rate stays the same at ~1Mbps, which is
+	considerably slower than most other protocols, such as USB which has a data rate of up to
+	10Gbps with USB 3.2 Gen 2, and a data rate of 480Mbps for the cheap and very widely used
+	USB 2.0
+- No Host-to-Peripheral Support -> Unlike USB or PCIE which both have some way to connect hosts
+	and peripherals easily, CAN has no way of facilitating this connection without the use of
+	an external microcontroller or gateway, leading to it requiring some prerequisite knowledge to
+	set the protocol up.
+
+Q2: There are a few reasons for Redback Racing to use the CAN protocol instead of other protocols.
+	One reason for CAN would be its extensive use in the automotive industry. This allows for the
+	team to look at other automotive examples as reference to use CAN in an automobile. Another
+	reason would be the reliability of the CAN protocol. Considering the vehicle being made by
+	Redback Racing is meant for high speed and endurance racing, a reliable communication method
+	is a must as issues could lead to disastrous consequences. A final reason for Redback Racing
+	to use the CAN protocol would be its simplicity, which would allow for smaller, lighter and
+	less complex systems which would make improve maintenance, upgradability and allow for new
+	members to easily understand the system.
 
 STM32 Chip Selection
+I have chosen the STM32F765ZI, which has 3 CAN buses, support for 100Mbps ethernet, 3 12bit ADC,
+support for power over USB and USB 2.0, 13 16-bit timers, and 2048 kB of flash memory. In most ways,
+this chip just meets the requirements. The reason for this is cost, because a chip which exceeds
+all the requirements would be quite expensive.
+
+The power requirements for this chip are 1.7 to 3.6V, which are the same for every other chip which
+satisfies the requirements.
+
+The physical requirements for this chip are 20x20x1.4 MM.
+
+The cost of the chip is ~$30 for a single chip, and ~$25 per chip for 100 chips total.

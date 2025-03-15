@@ -4,7 +4,7 @@ project(firmware)
 
 add_subdirectory(solution)
 
-add_subdirectory(dbcppp)
+#add_subdirectory(dbcppp)
 
 add_custom_target(clean-all
     COMMAND ${CMAKE_COMMAND} --build ${CMAKE_BINARY_DIR} --target clean

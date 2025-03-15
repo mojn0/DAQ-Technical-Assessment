@@ -1,0 +1,10 @@
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/CMakeFiles/clean-all.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/CMakeFiles/package.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/CMakeFiles/package_source.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/CMakeFiles/edit_cache.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/CMakeFiles/rebuild_cache.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/solution/CMakeFiles/answer.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/solution/CMakeFiles/package.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/solution/CMakeFiles/package_source.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/solution/CMakeFiles/edit_cache.dir
+/home/pkay/Projects/DAQ-Technical-Assessment/firmware/build/solution/CMakeFiles/rebuild_cache.dir
